@@ -1,0 +1,18 @@
+FROM node:14
+
+RUN npm install -g --unsafe-perm prisma
+RUN npm i -D typescript ts-node @types/node
+RUN npm install micro apollo-server-micro graphql
+
+RUN mkdir /app
+WORKDIR /app
+
+COPY package*.json ./
+COPY prisma ./prisma/
+
+RUN npm install
+RUN prisma generate
+
+COPY . .
+
+CMD [ "npm","run", "dev" ]
