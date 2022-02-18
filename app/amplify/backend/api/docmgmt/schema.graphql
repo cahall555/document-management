@@ -1,0 +1,10 @@
+type Account @model {
+  id: ID!
+  name: String!
+  type: AccountType
+}
+
+enum AccountType {
+    Non Profit
+    Government
+}

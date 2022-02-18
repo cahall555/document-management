@@ -9,14 +9,3 @@ Some documents expire and need to be re-uploaded (example: insurance, first aid 
 #### nice to have:
 
 Custom dashboard for participants. A way to securely communicate with them and allow them to engage with the greater community. Forms, how too's, training etc could also be found here.
-
-### Commands
-
-* docker exec -it mysql bash
-         mysql -u {user} -p
-* docker exec -it prisma bash
-
-# Temporary bug with -- preview-feature
-#https://github.com/prisma/prisma/issues/7053
-* npx prisma db push --preview-feature
-* npx prisma db seed --preview-feature
