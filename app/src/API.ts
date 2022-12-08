@@ -118,6 +118,44 @@ export type ModelAccountConnection = {
   nextToken?: string | null,
 };
 
+export type ModelSubscriptionAccountFilterInput = {
+  id?: ModelSubscriptionIDInput | null,
+  name?: ModelSubscriptionStringInput | null,
+  type?: ModelSubscriptionStringInput | null,
+  and?: Array< ModelSubscriptionAccountFilterInput | null > | null,
+  or?: Array< ModelSubscriptionAccountFilterInput | null > | null,
+};
+
+export type ModelSubscriptionIDInput = {
+  ne?: string | null,
+  eq?: string | null,
+  le?: string | null,
+  lt?: string | null,
+  ge?: string | null,
+  gt?: string | null,
+  contains?: string | null,
+  notContains?: string | null,
+  between?: Array< string | null > | null,
+  beginsWith?: string | null,
+  in?: Array< string | null > | null,
+  notIn?: Array< string | null > | null,
+};
+
+export type ModelSubscriptionStringInput = {
+  ne?: string | null,
+  eq?: string | null,
+  le?: string | null,
+  lt?: string | null,
+  ge?: string | null,
+  gt?: string | null,
+  contains?: string | null,
+  notContains?: string | null,
+  between?: Array< string | null > | null,
+  beginsWith?: string | null,
+  in?: Array< string | null > | null,
+  notIn?: Array< string | null > | null,
+};
+
 export type CreateAccountMutationVariables = {
   input: CreateAccountInput,
   condition?: ModelAccountConditionInput | null,
@@ -202,6 +240,10 @@ export type ListAccountsQuery = {
   } | null,
 };
 
+export type OnCreateAccountSubscriptionVariables = {
+  filter?: ModelSubscriptionAccountFilterInput | null,
+};
+
 export type OnCreateAccountSubscription = {
   onCreateAccount?:  {
     __typename: "Account",
@@ -213,6 +255,10 @@ export type OnCreateAccountSubscription = {
   } | null,
 };
 
+export type OnUpdateAccountSubscriptionVariables = {
+  filter?: ModelSubscriptionAccountFilterInput | null,
+};
+
 export type OnUpdateAccountSubscription = {
   onUpdateAccount?:  {
     __typename: "Account",
@@ -222,6 +268,10 @@ export type OnUpdateAccountSubscription = {
     createdAt: string,
     updatedAt: string,
   } | null,
+};
+
+export type OnDeleteAccountSubscriptionVariables = {
+  filter?: ModelSubscriptionAccountFilterInput | null,
 };
 
 export type OnDeleteAccountSubscription = {

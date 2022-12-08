@@ -3,10 +3,11 @@
   "serviceConfiguration": {
     "apiName": "docmgmt",
     "serviceName": "AppSync",
-    "gqlSchemaPath": "/home/wonderwarrior/Documents/document-management/app/amplify/backend/api/docmgmt/schema.graphql",
     "defaultAuthType": {
-      "mode": "AMAZON_COGNITO_USER_POOLS",
-      "cognitoUserPoolId": "authdocmgmtbb98dafb"
+      "mode": "API_KEY",
+      "expirationTime": 200,
+      "apiKeyExpirationDate": "2023-06-26T20:03:38.199Z",
+      "keyDescription": "document-management-api"
     },
     "conflictResolution": {},
     "additionalAuthTypes": []

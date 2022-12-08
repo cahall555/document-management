@@ -2,11 +2,5 @@
   "AppSyncApiName": "docmgmt",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
   "DynamoDBEnableServerSideEncryption": false,
-  "AuthCognitoUserPoolId": {
-    "Fn::GetAtt": [
-      "authdocmgmtbb98dafb",
-      "Outputs.UserPoolId"
-    ]
-  },
-  "AuthModeLastUpdated": "2022-02-18T00:39:02.041Z"
+  "AuthModeLastUpdated": "2022-12-08T20:03:47.209Z"
 }

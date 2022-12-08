@@ -3,8 +3,8 @@
 // this is an auto generated file. This will be overwritten
 
 export const onCreateAccount = /* GraphQL */ `
-  subscription OnCreateAccount {
-    onCreateAccount {
+  subscription OnCreateAccount($filter: ModelSubscriptionAccountFilterInput) {
+    onCreateAccount(filter: $filter) {
       id
       name
       type
@@ -14,8 +14,8 @@ export const onCreateAccount = /* GraphQL */ `
   }
 `;
 export const onUpdateAccount = /* GraphQL */ `
-  subscription OnUpdateAccount {
-    onUpdateAccount {
+  subscription OnUpdateAccount($filter: ModelSubscriptionAccountFilterInput) {
+    onUpdateAccount(filter: $filter) {
       id
       name
       type
@@ -25,8 +25,8 @@ export const onUpdateAccount = /* GraphQL */ `
   }
 `;
 export const onDeleteAccount = /* GraphQL */ `
-  subscription OnDeleteAccount {
-    onDeleteAccount {
+  subscription OnDeleteAccount($filter: ModelSubscriptionAccountFilterInput) {
+    onDeleteAccount(filter: $filter) {
       id
       name
       type

@@ -16,5 +16,26 @@
         "docmgmtbb98dafb": {}
       }
     }
+  },
+  "docmgmt": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-docmgmt-docmgmt-123750-authRole",
+      "UnauthRoleArn": "arn:aws:iam::080635726640:role/amplify-docmgmt-docmgmt-123750-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::080635726640:role/amplify-docmgmt-docmgmt-123750-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-docmgmt-docmgmt-123750-deployment",
+      "UnauthRoleName": "amplify-docmgmt-docmgmt-123750-unauthRole",
+      "StackName": "amplify-docmgmt-docmgmt-123750",
+      "StackId": "arn:aws:cloudformation:us-east-2:080635726640:stack/amplify-docmgmt-docmgmt-123750/cdd88200-772f-11ed-b18b-0a9e45a7ba30",
+      "AmplifyAppId": "d1d52q58rvufmg"
+    },
+    "categories": {
+      "auth": {
+        "docmgmtbb98dafb": {}
+      },
+      "api": {
+        "docmgmt": {}
+      }
+    }
   }
 }
