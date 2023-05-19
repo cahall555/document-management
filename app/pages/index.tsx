@@ -3,6 +3,7 @@ import { Amplify, API, Auth, withSSRContext } from "aws-amplify";
 import Head from "next/head";
 import awsExports from "../src/aws-exports";
 import 'tailwindcss/tailwind.css'
+import EditAccounts from './componets/edit-accounts'
 import AccountsTable from './componets/accountsTable'
 import Header from './componets/header'
 import Footer from './componets/footer'
@@ -21,6 +22,7 @@ const Home = ()=> {
       <AccountsTable/>
       <Buttons/>
       <Footer/>
+	<EditAccounts/>
     </AmplifyAuthenticator>
     </div>
       

@@ -6,6 +6,7 @@ export type CreateAccountInput = {
   id?: string | null,
   name: string,
   type?: AccountType | null,
+  relationship_id: string,
 };
 
 export enum AccountType {
@@ -18,6 +19,7 @@ export enum AccountType {
 export type ModelAccountConditionInput = {
   name?: ModelStringInput | null,
   type?: ModelAccountTypeInput | null,
+  relationship_id?: ModelStringInput | null,
   and?: Array< ModelAccountConditionInput | null > | null,
   or?: Array< ModelAccountConditionInput | null > | null,
   not?: ModelAccountConditionInput | null,
@@ -73,6 +75,7 @@ export type Account = {
   id: string,
   name: string,
   type?: AccountType | null,
+  relationship_id: string,
   createdAt: string,
   updatedAt: string,
 };
@@ -81,6 +84,7 @@ export type UpdateAccountInput = {
   id: string,
   name?: string | null,
   type?: AccountType | null,
+  relationship_id?: string | null,
 };
 
 export type DeleteAccountInput = {
@@ -91,6 +95,7 @@ export type ModelAccountFilterInput = {
   id?: ModelIDInput | null,
   name?: ModelStringInput | null,
   type?: ModelAccountTypeInput | null,
+  relationship_id?: ModelStringInput | null,
   and?: Array< ModelAccountFilterInput | null > | null,
   or?: Array< ModelAccountFilterInput | null > | null,
   not?: ModelAccountFilterInput | null,
@@ -122,6 +127,7 @@ export type ModelSubscriptionAccountFilterInput = {
   id?: ModelSubscriptionIDInput | null,
   name?: ModelSubscriptionStringInput | null,
   type?: ModelSubscriptionStringInput | null,
+  relationship_id?: ModelSubscriptionStringInput | null,
   and?: Array< ModelSubscriptionAccountFilterInput | null > | null,
   or?: Array< ModelSubscriptionAccountFilterInput | null > | null,
 };
@@ -167,6 +173,7 @@ export type CreateAccountMutation = {
     id: string,
     name: string,
     type?: AccountType | null,
+    relationship_id: string,
     createdAt: string,
     updatedAt: string,
   } | null,
@@ -183,6 +190,7 @@ export type UpdateAccountMutation = {
     id: string,
     name: string,
     type?: AccountType | null,
+    relationship_id: string,
     createdAt: string,
     updatedAt: string,
   } | null,
@@ -199,6 +207,7 @@ export type DeleteAccountMutation = {
     id: string,
     name: string,
     type?: AccountType | null,
+    relationship_id: string,
     createdAt: string,
     updatedAt: string,
   } | null,
@@ -214,6 +223,7 @@ export type GetAccountQuery = {
     id: string,
     name: string,
     type?: AccountType | null,
+    relationship_id: string,
     createdAt: string,
     updatedAt: string,
   } | null,
@@ -233,6 +243,7 @@ export type ListAccountsQuery = {
       id: string,
       name: string,
       type?: AccountType | null,
+      relationship_id: string,
       createdAt: string,
       updatedAt: string,
     } | null >,
@@ -250,6 +261,7 @@ export type OnCreateAccountSubscription = {
     id: string,
     name: string,
     type?: AccountType | null,
+    relationship_id: string,
     createdAt: string,
     updatedAt: string,
   } | null,
@@ -265,6 +277,7 @@ export type OnUpdateAccountSubscription = {
     id: string,
     name: string,
     type?: AccountType | null,
+    relationship_id: string,
     createdAt: string,
     updatedAt: string,
   } | null,
@@ -280,6 +293,7 @@ export type OnDeleteAccountSubscription = {
     id: string,
     name: string,
     type?: AccountType | null,
+    relationship_id: string,
     createdAt: string,
     updatedAt: string,
   } | null,

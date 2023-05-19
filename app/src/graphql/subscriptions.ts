@@ -8,6 +8,7 @@ export const onCreateAccount = /* GraphQL */ `
       id
       name
       type
+      relationship_id
       createdAt
       updatedAt
     }
@@ -19,6 +20,7 @@ export const onUpdateAccount = /* GraphQL */ `
       id
       name
       type
+      relationship_id
       createdAt
       updatedAt
     }
@@ -30,6 +32,7 @@ export const onDeleteAccount = /* GraphQL */ `
       id
       name
       type
+      relationship_id
       createdAt
       updatedAt
     }

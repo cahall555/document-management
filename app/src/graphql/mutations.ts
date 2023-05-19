@@ -11,6 +11,7 @@ export const createAccount = /* GraphQL */ `
       id
       name
       type
+      relationship_id
       createdAt
       updatedAt
     }
@@ -25,6 +26,7 @@ export const updateAccount = /* GraphQL */ `
       id
       name
       type
+      relationship_id
       createdAt
       updatedAt
     }
@@ -39,6 +41,7 @@ export const deleteAccount = /* GraphQL */ `
       id
       name
       type
+      relationship_id
       createdAt
       updatedAt
     }

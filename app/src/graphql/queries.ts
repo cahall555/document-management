@@ -8,6 +8,7 @@ export const getAccount = /* GraphQL */ `
       id
       name
       type
+      relationship_id
       createdAt
       updatedAt
     }
@@ -24,6 +25,7 @@ export const listAccounts = /* GraphQL */ `
         id
         name
         type
+        relationship_id
         createdAt
         updatedAt
       }

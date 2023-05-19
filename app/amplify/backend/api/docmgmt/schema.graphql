@@ -2,9 +2,10 @@ type Account @model {
   id: ID!
   name: String!
   type: AccountType
+  relationship_id: String!
 }
 
 enum AccountType {
-    Non Profit
+    NonProfit
     Government
 }
