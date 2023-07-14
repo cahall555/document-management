@@ -35,6 +35,12 @@
       },
       "api": {
         "docmgmt": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1d52q58rvufmg",
+          "type": "manual"
+        }
       }
     }
   }

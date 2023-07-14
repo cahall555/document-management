@@ -1,6 +1,6 @@
 import 'tailwindcss/tailwind.css'
 import React, { useState } from "react";
-import { createUser, updateUser } from "../src/graphql/mutations";
+import { createAccount, updateAccount } from "../../src/graphql/mutations";
 import { API } from "@aws-amplify/api";
 import { Auth } from  "@aws-amplify/auth";
 
@@ -8,7 +8,7 @@ const EditAccount = () => {
     const [name, setName] = useState('');
     const [accountType, setAccountType] = useState('');
     const [relationshipId, setRelationshipId] = useState('');
-    const submitHandler = async (event) => {
+    const submitHandler = async (event: any) => {
         event.preventDefault();
         // Save Details
     };

@@ -3,24 +3,28 @@ import React from 'react'
 
 const AccountsTable = () =>{
     return (
-  
-        <div className="grid-rows-4" data-theme="cupcake">
-            <div className="overflow-x-auto">
-            <table className="table w-full table-zebra">
+ <div className="flex flex-row text-left h-screen mx-auto w-full w-screen bg-gray-100"> 
+        <div className="flex flex-row" data-theme="cupcake">
+            <div className="">
+            <table className="table mx-8 table-zebra text-black">
               <thead>
                 <tr>
                   <th></th> 
-                  <th>Name</th> 
+                  <th>Title</th> 
                   <th>Type</th> 
-                  <th>Favorite Color</th>
+                  <th>Experation</th>
+	    	  <th>Owner</th>
+	    	  <th>Actions</th>
                 </tr>
               </thead> 
               <tbody>
                 <tr>
-                  <th>9</th> 
+                  <th>9</th>
+	    	  <td>Lesya Tinham - DL</td>
+	    	  <td>Drivers License</td>
+	    	  <td>2022-02-01</td>
                   <td>Lesya Tinham</td> 
-                  <td>Safety Technician IV</td> 
-                  <td>Maroon</td>
+                  <td>Volenteer</td>
                 </tr>
                 <tr>
                   <th>10</th> 
@@ -45,6 +49,7 @@ const AccountsTable = () =>{
           </div>
     
         </div>
+	    </div>
       )
 }
 export default AccountsTable;

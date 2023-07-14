@@ -6,6 +6,7 @@ import 'tailwindcss/tailwind.css'
 import EditAccounts from './componets/edit-accounts'
 import AccountsTable from './componets/accountsTable'
 import Header from './componets/header'
+import Menu from './componets/menu'
 import Footer from './componets/footer'
 import Buttons from './componets/buttons'
 import React from 'react'
@@ -18,9 +19,14 @@ const Home = ()=> {
     <>
     <div>
     <AmplifyAuthenticator>
-      <Header/>
+	  <div className="flex flex-row mx-auto">
+	  <div className="basis-1/3">
+	  <Menu/>
+	  </div>
+	  <div className="">
       <AccountsTable/>
-      <Buttons/>
+	  </div>
+	  </div>
       <Footer/>
 	<EditAccounts/>
     </AmplifyAuthenticator>
