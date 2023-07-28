@@ -19,11 +19,11 @@ const Home = ()=> {
     <>
     <div>
     <AmplifyAuthenticator>
-	  <div className="flex flex-row mx-auto">
+	  <div className="flex flex-row mx-auto w-screen">
 	  <div className="basis-1/3">
 	  <Menu/>
 	  </div>
-	  <div className="">
+	  <div className="justify-center">
       <AccountsTable/>
 	  </div>
 	  </div>

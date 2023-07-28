@@ -3,7 +3,7 @@ import React from 'react'
 
 const AccountsTable = () =>{
     return (
- <div className="flex flex-row text-left h-screen mx-auto w-full w-screen bg-gray-100"> 
+ <div className="flex flex-row text-left h-screen mx-auto w-full bg-gray-100"> 
         <div className="flex flex-row" data-theme="cupcake">
             <div className="">
             <table className="table mx-8 table-zebra text-black">
